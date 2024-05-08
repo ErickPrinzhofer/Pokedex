@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap'); /* Importei a fonte do google font */
+
+* { /* Reset basico */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center; /* centraliza o body na tela */
+    background: linear-gradient(to bottom, #40ee68,#fada77); /* Cor do fundo... Esse to botton é a primeira cor de cima pra baixo,, entrando na segunda cor */
+    min-height: 100vh; /* Sem isso, o fundo não vai 100% da tela */
+}
+
+main {
+    /*background-color: brown;      Só pra testar o main   */ 
+    display: inline-block; 
+    padding: 10%; /* Mais ou menos o contorno dele, principalmente em mobile */
+
+}
+
+.pokedex{
+    width:100%;
+    max-width: 425px;
+
+}
