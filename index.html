@@ -6,7 +6,7 @@
     <title>Pokedex</title>
     <link rel="icon" href="./imagens/favicon-16x16.png"> <!-- Icone que fica na janela-->
     <link rel="stylesheet" href="./css/style.css"> <!-- Criação do css-->
-
+    <script defer src="./js/script.js"></script> <!-- defer é pra não começar o js sem antes ter carregado a página-->
 
 </head>
 <body>
@@ -15,8 +15,8 @@
         <img src="./imagens/favicon-16x16.png" alt="pokemon" class="pokemon__image">
         
         <h1 class="pokemon__data">
-            <span class="pokemon__number">6</span> -
-            <span class="pokemon__name">pikachu</span>
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
         </h1>
 
         <form class="form">
@@ -25,9 +25,12 @@
             class="input__search"
             placeholder="Nome ou número"
             required>
-            
-            
         </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">Anterior</button>
+            <button class="button btn-next">Próximo</button>
+        </div>
 
         <img src="./imagens/pokedex.png" alt="pokedex" class="pokedex">
     </main>

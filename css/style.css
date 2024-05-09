@@ -52,8 +52,8 @@ main {
 .form{
     position:absolute;
     top:63%;
-    left: 16%;
-    width: 65%;
+    left: 18%;
+    width: 66.5%;
 }
 
 .input__search{
@@ -64,6 +64,40 @@ main {
     border-radius: 5px;
     font-weight: 600;
     color: rgb(2, 1, 1);
-    box-shadow: -3px -3px 0 rgb(108,110,109), -4px -4px 0 black;
+    box-shadow: -3px 3px 0 rgb(108,110,109), -5px 5px 0 black;
     
+}
+
+.buttons{
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    width: 51%;
+    border-radius: 50%;
+    transform: translate(-36%, 20%);
+    display: flex;
+    gap: 2%;
+    
+}
+
+button{
+    width: 45%;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: -2px 2px 0 rgb(108,110,109), -3px 3px 0 black;
+    padding: 2%;
+    font-size: large;
+    font-weight: 600;
+    background-color: #444;
+    color: #e3e3e3;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.button:active{ /* Quando apertar o botão*/
+    background-color: gray;
+    color: black;
+    box-shadow: inset -4px 4px 0 black;
+    font-size: 1rem;
 }
