@@ -17,6 +17,7 @@ main {
     /*background-color: brown;      Só pra testar o main   */ 
     display: inline-block; 
     padding: 10%; /* Mais ou menos o contorno dele, principalmente em mobile */
+    position:relative;
 
 }
 
@@ -24,4 +25,45 @@ main {
     width:100%;
     max-width: 425px;
 
+}
+.pokemon__image{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-63%, 50%);
+    height:15%;
+
+}
+
+.pokemon__data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 53.5%;
+    left: 40%;
+    font-size: clamp(8px, 5vw, 35px); /* mantém o nome fixo - clamp(min, desejavel, max) */
+}
+
+.pokemon__name{
+    color: #3d3030;
+    text-transform: capitalize; /* Deixa a primeira letra maiuscula */
+}
+
+.form{
+    position:absolute;
+    top:63%;
+    left: 16%;
+    width: 65%;
+}
+
+.input__search{
+    width: 70%;
+    padding: 2.5%;
+    font-size: clamp(10px, 5vw, 1rem);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(2, 1, 1);
+    box-shadow: -3px -3px 0 rgb(108,110,109), -4px -4px 0 black;
+    
 }
